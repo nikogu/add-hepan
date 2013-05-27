@@ -1,0 +1,31 @@
+{
+    "name": "河畔一键分享",
+    "version": "0.2",
+    "permissions":[
+      "tabs",
+      "http://bbs.stuhome.net/*",
+      "http://bbs.qshpan.com/*",
+      "http://*.163.com/*",
+      "http://*.huxiu.com/*",
+      "http://linux.cn/*"
+    ],
+    "background": { "scripts": ["background1.js"] },
+    "page_action": {
+      "default_icon": "logo.jpg",
+      "default_title": "河畔一键分享"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "http://bbs.stuhome.net/*",
+          "http://bbs.qshpan.com/*",
+          "http://*.163.com/*",
+          "http://*.huxiu.com/*",
+          "http://linux.cn/*"
+        ],
+        "css": ["mystyles.css"],
+        "js" : ["jquery.js","contentscript.js"]
+      }
+    ],
+    "manifest_version": 2
+  }

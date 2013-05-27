@@ -1,0 +1,21 @@
+#hepan-type-wrap {
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+	padding: 10px;
+	position: fixed;	
+	top: 0;
+	left: 50%;
+	width: 200px;
+	text-align: left;
+	z-index: 9999;
+}
+#hepan-type-wrap li {
+	display: block;
+	padding: 5px;
+	cursor: pointer;
+	text-align: center;
+}
+#hepan-type-wrap li:hover {
+	text-decoration: underline;
+}
